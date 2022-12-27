@@ -12,7 +12,7 @@
      <div class="d-sm-flex align-items-center justify-content-between">
        <div>
          
-         <p class="lead my-4">
+         <p class="lead my-4 text-light">
            We focus on our customers fundamental needs and try to make this place as easily accessable as it can.
          </p>
          <a href="product.php" class="btn btn-primary btn-lg">CLICK HERE FOR THE LATEST COMBINATIONS!</a>
@@ -30,7 +30,7 @@
  <section class="bg-secondary text-light p-5">
   <div class="container">
     <div class="d-md-flex justify-content-between align-items-center">
-      <h3 class="mb-3 mb-md-0">latest offers</h3>
+      <h3 class="mb-3 mb-md-0">Latest Offers</h3>
 
       
     </div>
