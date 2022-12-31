@@ -1,0 +1,37 @@
+<?php 
+    $title = "index";
+    require_once 'includes/header.php';
+    require_once 'db/conn.php';
+?>
+<?php require_once 'includes/footer.php';?>
+
+
+
+
+<?php 
+    require_once 'includes/header.php';
+?>
+<?php require_once 'includes/footer.php';?>
+
+
+
+<?php
+$id =  $_POST['name'];
+echo $id;
+?>
+
+<form action="conn.php" method="post">
+    <input type="text" name="name" >
+    <button type="submit">Submit</button>
+</form>
+
+
+$sql = 'SELECT * FROM MotherBoard';
+    $result = mysqli_query($conn, $sql);
+
+    // $row = mysqli_fetch_assoc($result);
+
+    while($row=$result->fetch_array(SQLITE3_ASSOC)){
+    echo $row['Mno'];
+    }
+    echo $row;

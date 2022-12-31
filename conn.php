@@ -1,14 +1,19 @@
 <?php
-//  Localhost via UNIX socket 
-$servername = "localhost";
-$username = " root@localhost";
-$password = "password";
 
-$conn = new mysqli($servername,$username,$password);
+$sname= "Localhost";
 
-if ($conn->connect_error){
-    die("Connection failes:" . $conn->connect_error);
+$name= "root";
+
+$password = "";
+
+$db_name = "PC_BUILD";
+
+$conn = new mysqli($sname, $name, $password, $db_name);
+
+if (!$conn) {
+
+    echo 'Could not connect';
+
 }
-echo "Connected Successfully";
 
 ?>
