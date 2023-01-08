@@ -21,6 +21,11 @@
     a {
       text-decoration: none;
     }
+    
+    .extragap1 {
+      background-color:black;
+      margin-top: 5%;
+    }
 
     p {
       color: black;
@@ -45,7 +50,7 @@
         <ul class="navbar-nav ms-auto">
 
           <li class="nav-item">
-            <a href="test.php" class="nav-link">HOME</a>
+            <a href="index.php" class="nav-link">HOME</a>
           </li>
           <li class="nav-item">
             <a href="product.php" class="nav-link">BUILD</a>

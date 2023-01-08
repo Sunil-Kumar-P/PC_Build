@@ -91,7 +91,8 @@ while ($row = $result->fetch_array(SQLITE3_ASSOC)) {
     <a href="./storage.php">
       <img src="./img/ssd1.jpg" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title"><?php echo $Sname; ?></h5>
+        <h5 class="card-title"><?php echo $Sname;
+        echo $Refervideo ; ?></h5>
         <p class="card-text">STORAGE</p>
         <p class="card-text"><small class="text-muted">Price:<?php echo $Sprice; ?></small></p>
       </div>
@@ -99,6 +100,8 @@ while ($row = $result->fetch_array(SQLITE3_ASSOC)) {
   </div>
 </div>
 
-
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe width="560" height="315" src="<?php echo $Refervideo ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
 
 <?php require_once 'includes/footer.php'; ?>

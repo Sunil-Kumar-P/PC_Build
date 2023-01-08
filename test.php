@@ -1,28 +1,20 @@
+<?php
 
+$sname= "Localhost";
 
-<?php 
-    require_once 'conn.php';
+$name= "root";
 
-    $sql = 'SELECT * FROM MotherBoard WHERE Mno=1';
-    $result = mysqli_query($conn, $sql);
+$password = "";
 
-    // $row = mysqli_fetch_assoc($result);
+$db_name = "PC_BUILD";
 
-    while($row=$result->fetch_array(SQLITE3_ASSOC)){
-    echo $row['Mno'];
-    echo " | ";
-    echo $row['Mname'];
-    echo " | ";
-    echo $row['Price'];
-    echo " | ";
-    echo $row['Description'];
-    echo " | ";
-    $img = $row['Mimg'];
+$conn = new mysqli($sname, $name, $password, $db_name);
 
-    echo '<img src="data:image/png;base64,'.base64_encode($img).'"/>';
-    }
+if (!$conn) {
 
+    echo 'Could not connect';
+
+}
 
 
 ?>
-<img src="$img">

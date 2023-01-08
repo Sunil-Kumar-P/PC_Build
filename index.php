@@ -13,7 +13,8 @@
        <div>
          
          <p class="lead my-4 text-light">
-           We focus on our customers fundamental needs and try to make this place as easily accessable as it can.
+           <h3>Want a Better PC? Try Building Your Own.</h3><br>
+           Assembling a computer yourself is a good way to learn how they work.
          </p>
          <a href="product.php" class="btn btn-primary btn-lg">CLICK HERE FOR THE LATEST COMBINATIONS!</a>
        </div>
@@ -72,17 +73,16 @@
    </div>
  </section>
  <!-- MORE Sections -->
- <section id="learn" class="p-5">
+ <section id="learn" class="p-5" style="background-color:#F4B746;">
    <div class="container">
      <div class="row align-items-center justify-content-between">
        <div class="col-md">
-         <img src="" class="img-responsive" alt="" />
+         <img src="./img/guidebook.png" class="img" alt="" width="700" height="500" />
        </div>
        <div class="col-md p-5">
-         <h2>Latest DESKTOPS</h2>
+         <h2>Guide</h2>
          <p class="lead">
-           Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-           Similique deleniti possimus magnam corporis ratione facere!
+           Do what you can, with what you have, where you are
          </p>
          <p>
            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque
@@ -90,77 +90,12 @@
            quae similique laboriosam iste minus placeat odit velit quos,
            nulla architecto amet voluptates?
          </p>
-         <a href="#" class="btn btn-light mt-3">
+         <a href="guide.php" class="btn btn-light mt-3">
            <i class="bi bi-chevron-right"></i> Read More
          </a>
        </div>
      </div>
    </div>
  </section>
-
-    
-
-
-
-
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="reg"
-      tabindex="-1"
-      aria-labelledby="regLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="regLabel">TO ORDER</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <p class="lead">Fill out this form and we will get back to you</p>
-            <form>
-              <div class="mb-3">
-                <label for="first-name" class="col-form-label">
-                  First Name:
-                </label>
-                <input type="text" class="form-control" id="first-name" />
-              </div>
-              <div class="mb-3">
-                <label for="last-name" class="col-form-label">Last Name:</label>
-                <input type="text" class="form-control" id="last-name" />
-              </div>
-              <div class="mb-3">
-                <label for="email" class="col-form-label">Email:</label>
-                <input type="email" class="form-control" id="email" />
-              </div>
-              <div class="mb-3">
-                <label for="phone" class="col-form-label">Phone:</label>
-                <input type="tel" class="form-control" id="phone" />
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Submit</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    
-
 
     <?php require_once 'includes/footer.php';?>

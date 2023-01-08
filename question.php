@@ -99,7 +99,7 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#question-four"
                 >
-                  How Do I sign up?
+                  How Do I Build?
                 </button>
               </h2>
               <div
@@ -127,7 +127,7 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#question-five"
                 >
-                  Do you help me find a job?
+                  Do you help me build it?
                 </button>
               </h2>
               <div
