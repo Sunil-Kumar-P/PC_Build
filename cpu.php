@@ -5,9 +5,10 @@ require_once 'includes/header.php';
 <?php
 // include "db_conn.php";
 
+$no = $_GET['no'];
 require_once 'conn.php';
 
-$sql = 'SELECT * FROM CPU WHERE Cno=1';
+$sql = "SELECT * FROM CPU WHERE Cno='$no'";
 $result = mysqli_query($conn, $sql);
 
 // $row = mysqli_fetch_assoc($result);
@@ -80,7 +81,7 @@ while ($row = $result->fetch_array(SQLITE3_ASSOC)) {
 <div class="container">
   <h1><?php echo $Cname; ?></h1>
   <p><?php echo $Description; ?></p>
-  <h1><mark>Rs.<?php echo $Price; ?>/-</mark></h1>
+  <h1><mark> <span>&#8377;</span> <?php echo $Price; ?>/-</mark></h1>
 </div>
 
 
@@ -153,11 +154,11 @@ while ($row = $result->fetch_array(SQLITE3_ASSOC)) {
 
 </section>
 
-<section class="bg-dark text-light">
+<!-- <section class="bg-dark text-light">
   <div class="embed-responsive embed-responsive-16by9">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/hncroWOKtbI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
-</section>
+</section> -->
 
 
 

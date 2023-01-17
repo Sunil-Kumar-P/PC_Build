@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap-grid.min.css"> -->
+
   <link rel="stylesheet" href="style.css" />
   <title>PC BUILD</title>
 
@@ -58,9 +61,9 @@
           <li class="nav-item">
             <a href="question.php" class="nav-link">QUESTIONS</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="about.php" class="nav-link">ABOUT US</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
