@@ -13,6 +13,11 @@ require_once 'includes/header.php';
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
 
     </div>
     <div class="carousel-inner">
@@ -35,6 +40,38 @@ require_once 'includes/header.php';
         <img src="img/gram4.png" class="d-block w-100" alt="...">
 
       </div>      
+        <div class="carousel-item">
+          <img src="img/gcpu.jpg" class="d-block w-100" alt="...">
+
+        </div>
+        <div class="carousel-item">
+          <img src="img/gcpu1.jpg" class="d-block w-100" alt="...">
+
+        </div>
+        <div class="carousel-item">
+          <img src="img/gcpu2.jpg" class="d-block w-100" alt="...">
+
+        </div>
+        <div class="carousel-item">
+          <img src="img/gcpu3.jpg" class="d-block w-100" alt="...">
+
+        </div>
+        <div class="carousel-item">
+          <img src="img/gcpu4.jpg" class="d-block w-100" alt="...">
+
+        </div>
+        <div class="carousel-item">
+          <img src="img/gcpu5.jpg" class="d-block w-100" alt="...">
+
+        </div>
+        <div class="carousel-item">
+          <img src="img/gcpu6.jpg" class="d-block w-100" alt="...">
+
+        </div>
+        <div class="carousel-item">
+          <img src="img/gcpu7.jpg" class="d-block w-100" alt="...">
+
+        </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>

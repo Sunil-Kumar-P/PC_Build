@@ -24,13 +24,7 @@
                 data-bs-parent="#questions"
               >
                 <div class="accordion-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                  beatae fuga animi distinctio perspiciatis adipisci velit maiores
-                  totam tempora accusamus modi explicabo accusantium consequatur,
-                  praesentium rem quisquam molestias at quos vero. Officiis ad
-                  velit doloremque at. Dignissimos praesentium necessitatibus
-                  natus corrupti cum consequatur aliquam! Minima molestias iure
-                  quam distinctio velit.
+                   CMR Institute of Technology.
                 </div>
               </div>
             </div>
@@ -43,7 +37,7 @@
                   data-bs-toggle="collapse"
                   data-bs-target="#question-two"
                 >
-                  How much does it cost to build it?
+                  How much does it cost to build a PC?
                 </button>
               </h2>
               <div
@@ -52,13 +46,7 @@
                 data-bs-parent="#questions"
               >
                 <div class="accordion-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                  beatae fuga animi distinctio perspiciatis adipisci velit maiores
-                  totam tempora accusamus modi explicabo accusantium consequatur,
-                  praesentium rem quisquam molestias at quos vero. Officiis ad
-                  velit doloremque at. Dignissimos praesentium necessitatibus
-                  natus corrupti cum consequatur aliquam! Minima molestias iure
-                  quam distinctio velit.
+                  It depends on how much performance is required the price also will Increase
                 </div>
               </div>
             </div>
@@ -80,13 +68,7 @@
                 data-bs-parent="#questions"
               >
                 <div class="accordion-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                  beatae fuga animi distinctio perspiciatis adipisci velit maiores
-                  totam tempora accusamus modi explicabo accusantium consequatur,
-                  praesentium rem quisquam molestias at quos vero. Officiis ad
-                  velit doloremque at. Dignissimos praesentium necessitatibus
-                  natus corrupti cum consequatur aliquam! Minima molestias iure
-                  quam distinctio velit.
+                  Basic Knowledge of Computer Fundamentals and must be able to Identfy individual components of Computer.
                 </div>
               </div>
             </div>
@@ -108,44 +90,12 @@
                 data-bs-parent="#questions"
               >
                 <div class="accordion-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                  beatae fuga animi distinctio perspiciatis adipisci velit maiores
-                  totam tempora accusamus modi explicabo accusantium consequatur,
-                  praesentium rem quisquam molestias at quos vero. Officiis ad
-                  velit doloremque at. Dignissimos praesentium necessitatibus
-                  natus corrupti cum consequatur aliquam! Minima molestias iure
-                  quam distinctio velit.
+                  You can follow the Slides or can watch the videos linked. 
                 </div>
               </div>
             </div>
             <!-- Item 5 -->
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#question-five"
-                >
-                  Do you help me build it?
-                </button>
-              </h2>
-              <div
-                id="question-five"
-                class="accordion-collapse collapse"
-                data-bs-parent="#questions"
-              >
-                <div class="accordion-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-                  beatae fuga animi distinctio perspiciatis adipisci velit maiores
-                  totam tempora accusamus modi explicabo accusantium consequatur,
-                  praesentium rem quisquam molestias at quos vero. Officiis ad
-                  velit doloremque at. Dignissimos praesentium necessitatibus
-                  natus corrupti cum consequatur aliquam! Minima molestias iure
-                  quam distinctio velit.
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </section>

@@ -38,7 +38,7 @@ $sql = 'SELECT * FROM MotherBoard';
 
 
 
-    update BUILD 
+update BUILD 
 set [Total = (SELECT SUM(Mprice , Cprice, Gprice, Rprice, Sprice) FROM CPU c, GPU g, MotherBoard m, RAM r, STORAGE s WHERE b.Mno=m.Mno and b.Cno=c.Cno and b.Gno=g.Gno and b.Rno=r.Rno and b.Sno=s.Sno)]
 WHERE Buildno=1;
 
@@ -46,6 +46,9 @@ WHERE Buildno=1;
 
 UPDATE BUILD b,  CPU c, GPU g, MotherBoard m, RAM r, STORAGE s
 set b.Total=(Mprice + Cprice+ Gprice+ Rprice+ Sprice)
-where b.Buildno=1;
+where b.Cno=c.Cno AND b.Mno=m.Mno AND b.Rno=r.Rno AND b.Gno=g.Gno AND b.Sno=s.Sno;
 
 24230
+
+
+$sql = "SELECT Mname, Cname, Gname, Sname, Rname, Mprice, Buildno, Cprice, Gprice, Rprice, Sprice, Mimg, CPUimg, GPUimg, RAMimg, Simg FROM BUILD b, CPU c, GPU g, MotherBoard m, RAM r, STORAGE s WHERE b.Mno=m.Mno and b.Cno=c.Cno and b.Gno=g.Gno and b.Rno=r.Rno and b.Sno=s.Sno and Buildno='$no'";
