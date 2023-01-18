@@ -1,7 +1,7 @@
 # PC BUILD
 
 ### OPEN Xampp control Panel
-##3 start the MySQL and Apache server
+### start the MySQL and Apache server
 ### move the folder into htdocs folder
 ### open browser and got to url http://localhost/phpmyadmin/
 ### select new create database Enter Databasename as PC_BUILD and press create
