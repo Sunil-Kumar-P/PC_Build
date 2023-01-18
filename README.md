@@ -1,6 +1,6 @@
 # PC BUILD
 
-## OPEN Xampp control Panel
+### OPEN Xampp control Panel
 ## start the MySQL and Apache server
 ## move the folder into htdocs folder
 ## open browser and got to url http://localhost/phpmyadmin/
