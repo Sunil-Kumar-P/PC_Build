@@ -1,0 +1,72 @@
+<?php 
+    $title = "index";
+    require_once 'includes/header.php';
+    require_once 'db/conn.php';
+?>
+<?php require_once 'includes/footer.php';?>
+
+
+
+
+<?php 
+    require_once 'includes/header.php';
+?>
+<?php require_once 'includes/footer.php';?>
+
+
+
+<?php
+$id =  $_POST['name'];
+echo $id;
+?>
+
+<form action="conn.php" method="post">
+    <input type="text" name="name" >
+    <button type="submit">Submit</button>
+</form>
+
+
+$sql = 'SELECT * FROM MotherBoard';
+    $result = mysqli_query($conn, $sql);
+
+    // $row = mysqli_fetch_assoc($result);
+
+    while($row=$result->fetch_array(SQLITE3_ASSOC)){
+    echo $row['Mno'];
+    }
+    echo $row;
+
+
+
+update BUILD 
+set [Total = (SELECT SUM(Mprice , Cprice, Gprice, Rprice, Sprice) FROM CPU c, GPU g, MotherBoard m, RAM r, STORAGE s WHERE b.Mno=m.Mno and b.Cno=c.Cno and b.Gno=g.Gno and b.Rno=r.Rno and b.Sno=s.Sno)]
+WHERE Buildno=1;
+
+
+
+UPDATE BUILD b,  CPU c, GPU g, MotherBoard m, RAM r, STORAGE s
+set b.Total=(Mprice + Cprice+ Gprice+ Rprice+ Sprice)
+where b.Cno=c.Cno AND b.Mno=m.Mno AND b.Rno=r.Rno AND b.Gno=g.Gno AND b.Sno=s.Sno;
+
+24230
+
+
+$sql = "SELECT Mname, Cname, Gname, Sname, Rname, Mprice, Buildno, Cprice, Gprice, Rprice, Sprice, Mimg, CPUimg, GPUimg, RAMimg, Simg FROM BUILD b, CPU c, GPU g, MotherBoard m, RAM r, STORAGE s WHERE b.Mno=m.Mno and b.Cno=c.Cno and b.Gno=g.Gno and b.Rno=r.Rno and b.Sno=s.Sno and Buildno='$no'";
+
+
+CREATE TRIGGER `Total_insert` BEFORE INSERT ON `BUILD` FOR EACH ROW set new.Total=(Mprice + Cprice+ Gprice+ Rprice+ Sprice) where BUILD.Cno=CPU.Cno AND BUILD.Mno=MotherBoard.Mno AND BUILD.Rno=RAM.Rno AND BUILD.Gno=GPU.Gno AND BUILD.Sno=STORAGE.Sno; 
+
+
+
+ // $Image = $_POST['Image'];
+                    if (count($_FILES) > 0) {
+                        if (is_uploaded_file($_FILES['Image']['tmp_name'])) {
+                            $imgData = file_get_contents($_FILES['Image']['tmp_name']);
+                            $imgType = $_FILES['Image']['type'];
+                            // $sql = "INSERT INTO tbl_image(imageType ,imageData) VALUES(?, ?)";
+                            $sql = "INSERT INTO `CPU` (`Cno`, `Cname`, `Cprice`, `Description`, `CPUimg`, `link`) VALUES (NULL, $Cname, $Cprice, $Description, ?, " . file_get_contents($tmp_image) . ");";
+
+                            // $statement = $conn->prepare($sql);
+                            // $statement->bind_param(NULL, $Cname, $Cprice, $Description, $imgData);
+                            // $current_id = $statement->execute() or die("<b>Error:</b> Problem on Image Insert<br/>" . mysqli_connect_error());
+                            $iquery = mysqli_query($conn, $sql);
